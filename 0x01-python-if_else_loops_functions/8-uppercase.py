@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 def uppercase(str):
     result = ""
 
@@ -10,4 +12,4 @@ def uppercase(str):
 
         result += chr(val)
 
-    print(result)
+    print("{}".format(result))
