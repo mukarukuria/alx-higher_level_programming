@@ -21,9 +21,9 @@ int is_palindrome(listint_t **head)
 		last = last->next;
 	}
 	last->next = NULL;
-	listint_t *current = half;
 	listint_t *half = last->next;
 	listint_t *next;
+	listint_t *current = half;
 
 	while (current != NULL)
 	{
