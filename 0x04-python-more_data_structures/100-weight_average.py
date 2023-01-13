@@ -4,10 +4,6 @@ def weight_average(my_list=[]):
     prod = 0
     if len(my_list) == 0:
         return 0
-
-    
-    for i, el in enumerate(my_list):
-        score, weight = el
-        ans = (score * weight) + ans
-        prod += weight 
-    return (ans/ prod)
+    total_weight = sum(weight for score, weight in my_list)
+    weighted_sum = sum(score * weight for score, weight in my_list)
+    return weighted_sum / total_weight
